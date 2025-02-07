@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaStar } from 'react-icons/fa';
 
-const PropertyRating = ({propertyId, inPage}: {propertyId:string, inPage:boolean}) => {
+const PropertyRating = ({ inPage}: {propertyId:string, inPage:boolean}) => {
   const rating  = 4.7
   const count = 122
 

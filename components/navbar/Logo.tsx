@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { BsHouseGearFill } from "react-icons/bs";
-import { PiRabbitFill } from "react-icons/pi";
+// import { BsHouseGearFill } from "react-icons/bs";
+// import { PiRabbitFill } from "react-icons/pi";
 import { GiKangaroo } from "react-icons/gi";
 
-import { Button } from '../ui/button';
+// import { Button } from '../ui/button';
 
 function Logo() {
   return (
