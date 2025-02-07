@@ -1,0 +1,21 @@
+import EmptyList from "@/components/home/EmptyList";
+import PropertiesList from "@/components/home/PropertiesList";
+import { fetchFavorites } from "@/utils/actions";
+
+ async function FavoritePage() {
+
+  const favorites = await fetchFavorites()
+  if (favorites.length === 0) {
+    return (
+      <EmptyList
+        heading='No favorites.'
+        message='Add properties to your favorites to view them here.'
+        btnText='Add a Property'
+      />
+    );
+  }
+    return (
+      <PropertiesList properties={favorites} />
+    )
+  }
+  export default FavoritePage;
